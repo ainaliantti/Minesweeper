@@ -292,7 +292,6 @@ def pelin_pyoritys(pituus, leveys, miinat, kentta):
                 minuutit = minuutit - 1
             print("Pelin kesto: {minuutit} minuuttia ja {sekunnit} sekuntia.".format(minuutit=minuutit, sekunnit=sekunnit))
             kesto = aika2 - aika
-            #print(kesto)#ajan testausta varten
             tulos = "häviö"
             tilastoon_tallentaminen(ajankohta, aika, minuutit, sekunnit, vuorot, tulos, pituus, leveys, miinat)
             break
@@ -316,7 +315,6 @@ def pelin_pyoritys(pituus, leveys, miinat, kentta):
                     minuutit = minuutit - 1
                 print("Pelin kesto: {minuutit} minuuttia ja {sekunnit} sekuntia.".format(minuutit=minuutit, sekunnit=sekunnit))
                 kesto = aika2 - aika
-                #print(kesto)#ajan testausta varten
                 tulos = "voitto"
                 tilastoon_tallentaminen(ajankohta, aika, minuutit, sekunnit, vuorot, tulos, pituus, leveys, miinat)
                 break
@@ -349,9 +347,6 @@ def tulosta_kentta2(kentta):
     while i != pituus:
         print(" ".join(kentta2[i]))
         i = i + 1
-    #alla oleva laittaa numerot vasemmalle puolen kenttää
-    #for l, ruutu in enumerate(kentta2):
-        #print(l, " ".join(ruutu))
 
 '''
 Main-funktio. Näyttää valikon.
